@@ -9,6 +9,7 @@ class TreeNode {
   }
 }
 
+// 时间复杂度 O(n) 空间复杂度O(n)
 function preorderTraversal(root: TreeNode | null): number[] {
   const result = [];
   const stack = [];
