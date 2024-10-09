@@ -1,0 +1,27 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "算法分支",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npx tsc --watch\" \"npx nodemon dist/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfhwnqe/blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lfhwnqe/blog/issues"
+  },
+  "homepage": "https://github.com/lfhwnqe/blog#readme",
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "concurrently": "^9.0.1",
+    "nodemon": "^3.1.7",
+    "typescript": "^5.6.3"
+  }
+}
