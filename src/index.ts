@@ -1,5 +1,6 @@
 import preorderTraversalTest from "./preorderTraversal";
+import validParenthesesRun from "./valid-parentheses";
 
-preorderTraversalTest();
-
-console.log("hello");
+// 调用预定义的测试函数
+// preorderTraversalTest();
+validParenthesesRun();
