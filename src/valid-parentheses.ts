@@ -35,7 +35,8 @@
 
 // 1 <= s.length <= 104
 // s 仅由括号 '()[]{}' 组成
-
+// 时间复杂度 O(n)，n是字符串长度，算法需要遍历整个字符串
+// 空间复杂度 最坏情况下是 O(n)，最坏全是 （（（ 就要入栈 n/2 即 O(n/2) 简化为 O(n)
 function isValid(s: string): boolean {
   const map: { [key: string]: string } = { "(": ")", "[": "]", "{": "}" };
   let ret = true;
