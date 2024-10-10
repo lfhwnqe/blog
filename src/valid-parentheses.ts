@@ -29,7 +29,7 @@
 
 // 输入：s = "([])"
 
-// 输出：true输出：true
+// 输出：true
 
 // 提示：
 
@@ -39,7 +39,6 @@
 // 空间复杂度 最坏情况下是 O(n)，最坏全是 （（（ 就要入栈 n/2 即 O(n/2) 简化为 O(n)
 function isValid(s: string): boolean {
   const map: { [key: string]: string } = { "(": ")", "[": "]", "{": "}" };
-  let ret = true;
   const stack: string[] = [];
   for (const item of s) {
     if (map[item]) {
@@ -51,7 +50,8 @@ function isValid(s: string): boolean {
       }
     }
   }
-  return ret;
+  // 如果栈为空说明括号匹配
+  return stack.length === 0;
 }
 const run = () => {
   console.log("():", isValid("()"));
