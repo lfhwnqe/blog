@@ -3,7 +3,8 @@ import validParenthesesRun from "./valid-parentheses";
 import numberOfRecentCalls from "./numberOfRecentCalls";
 import reverseLinkedListRun from "./reverse-linked-list";
 import deleteNodeInALinkedListRun from "./delete-node-in-a-linked-list";
-import AddTwoNumbersRun from './add-two-numbers'
+import AddTwoNumbersRun from "./add-two-numbers";
+import deleteDuplicatesRun from "./remove-duplicates-from-sorted-list";
 
 // 调用预定义的测试函数
 // preorderTraversalTest();
@@ -11,4 +12,5 @@ import AddTwoNumbersRun from './add-two-numbers'
 // numberOfRecentCalls();
 // reverseLinkedListRun()
 // deleteNodeInALinkedListRun();
-AddTwoNumbersRun();
+// AddTwoNumbersRun();
+deleteDuplicatesRun();
