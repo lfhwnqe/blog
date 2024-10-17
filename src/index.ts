@@ -6,6 +6,7 @@ import deleteNodeInALinkedListRun from "./delete-node-in-a-linked-list";
 import AddTwoNumbersRun from "./add-two-numbers";
 import deleteDuplicatesRun from "./remove-duplicates-from-sorted-list";
 import linkedListCycleRun from './linked-list-cycle'
+import intersectionOfTwoArraysRun from './intersection-of-two-arrays'
 
 // 调用预定义的测试函数
 // preorderTraversalTest();
@@ -15,4 +16,5 @@ import linkedListCycleRun from './linked-list-cycle'
 // deleteNodeInALinkedListRun();
 // AddTwoNumbersRun();
 // deleteDuplicatesRun();
-linkedListCycleRun();
+// linkedListCycleRun();
+intersectionOfTwoArraysRun()
