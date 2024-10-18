@@ -5,8 +5,9 @@ import reverseLinkedListRun from "./reverse-linked-list";
 import deleteNodeInALinkedListRun from "./delete-node-in-a-linked-list";
 import AddTwoNumbersRun from "./add-two-numbers";
 import deleteDuplicatesRun from "./remove-duplicates-from-sorted-list";
-import linkedListCycleRun from './linked-list-cycle'
-import intersectionOfTwoArraysRun from './intersection-of-two-arrays'
+import linkedListCycleRun from "./linked-list-cycle";
+import intersectionOfTwoArraysRun from "./intersection-of-two-arrays";
+import twoSumRun from "./two-sum";
 
 // 调用预定义的测试函数
 // preorderTraversalTest();
@@ -17,4 +18,5 @@ import intersectionOfTwoArraysRun from './intersection-of-two-arrays'
 // AddTwoNumbersRun();
 // deleteDuplicatesRun();
 // linkedListCycleRun();
-intersectionOfTwoArraysRun()
+// intersectionOfTwoArraysRun()
+twoSumRun();
