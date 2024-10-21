@@ -8,6 +8,7 @@ import deleteDuplicatesRun from "./remove-duplicates-from-sorted-list";
 import linkedListCycleRun from "./linked-list-cycle";
 import intersectionOfTwoArraysRun from "./intersection-of-two-arrays";
 import twoSumRun from "./two-sum";
+import repeatingRun from './longest-substring-without-repeating-characters'
 
 // 调用预定义的测试函数
 // preorderTraversalTest();
@@ -19,4 +20,5 @@ import twoSumRun from "./two-sum";
 // deleteDuplicatesRun();
 // linkedListCycleRun();
 // intersectionOfTwoArraysRun()
-twoSumRun();
+// twoSumRun();
+repeatingRun();
