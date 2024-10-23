@@ -10,6 +10,7 @@ import intersectionOfTwoArraysRun from "./intersection-of-two-arrays";
 import twoSumRun from "./two-sum";
 import repeatingRun from "./longest-substring-without-repeating-characters";
 import minimumWindowSubstringrun from "./minimum-window-substring";
+import treeRun from "./tree";
 
 // 调用预定义的测试函数
 // preorderTraversalTest();
@@ -23,4 +24,5 @@ import minimumWindowSubstringrun from "./minimum-window-substring";
 // intersectionOfTwoArraysRun()
 // twoSumRun();
 // repeatingRun();
-minimumWindowSubstringrun();
+// minimumWindowSubstringrun();
+treeRun();

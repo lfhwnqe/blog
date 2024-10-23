@@ -1,13 +1,15 @@
 let nextUnitOfWork = null;
+let wipRoot = null;
 
 export function render(element, container) {
   // 根节点设置成第一个工作单元
-  nextUnitOfWork = {
+  wipRoot = {
     dom: container,
     props: {
       children: [element],
     },
   };
+  nextUnitOfWork = wipRoot;
 }
 
 export function createDom(fiber) {
@@ -36,15 +38,33 @@ export function createDom(fiber) {
 
   // container.appendChild(dom);
 }
+// 处理提交的fiber tree
+function commitWork(fiber) {
+  if (!fiber) return;
+  const domParent = fiber.parent.dom;
+  domParent.appendChild(fiber.dom);
+
+  commitWork(fiber.child);
+  commitWork(fiber.sibling);
+}
+// 提交任务，将fiber tree 渲染为真实 DOM
+function commitRoot() {
+  commitWork(wipRoot.child);
+  wipRoot = null;
+}
+
 // params 截止时间
 function workLoop(deadline) {
   // 停止标识
   let showYield = false;
   while (nextUnitOfWork && !showYield) {
     nextUnitOfWork = performUnitOfWork(nextUnitOfWork);
-    showYield = deadline.timeRemaining();
-    requestIdleCallback(workLoop);
+    showYield = deadline.timeRemaining() < 1;
   }
+  if (!nextUnitOfWork && wipRoot) {
+    commitRoot();
+  }
+  requestIdleCallback(workLoop);
 }
 
 requestIdleCallback(workLoop);
@@ -53,9 +73,9 @@ function performUnitOfWork(fiber) {
   if (!fiber.dom) {
     fiber.dom = createDom(fiber);
   }
-  if (fiber.parent) {
-    fiber.parent.dom.appendChild(fiber.dom);
-  }
+  // if (fiber.parent) {
+  //   fiber.parent.dom.appendChild(fiber.dom);
+  // }
   const elements = fiber.props.children;
   // console.log("elements:", elements);
   // 索引 index=0
@@ -88,7 +108,7 @@ function performUnitOfWork(fiber) {
       // console.log("🌹nextFiber.sibling:", nextFiber.sibling);
       return nextFiber.sibling;
     }
-    console.log("🌹nextFiber:", nextFiber);
+    // console.log("🌹nextFiber:", nextFiber);
     // console.log('nextFiber.parent:',nextFiber.parent);
     nextFiber = nextFiber.parent;
   }
