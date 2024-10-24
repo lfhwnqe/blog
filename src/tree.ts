@@ -61,10 +61,47 @@ class BinaryTree<T> {
 
   // 中序遍历（左 -> 根 -> 右）
   inOrder(node: TreeNode<T> | null = this.root) {
+    const stack = [];
+    let curr = node;
+    const res = [];
+    while (curr || stack.length) {
+      while (curr) {
+        stack.push(curr);
+        curr = curr.left;
+      }
+      curr = stack.pop()!;
+      res.push(curr.value);
+      curr = curr.right;
+    }
+    return res;
   }
 
   // 后序遍历（左 -> 右 -> 根）
-  postOrder(node: TreeNode<T> | null = this.root) {}
+  postOrder(node: TreeNode<T> | null = this.root) {
+    const stack = [];
+    const result = [];
+    let curr = node;
+    let lastVisited = null;
+    while (curr || stack.length) {
+      while (curr) {
+        stack.push(curr);
+        curr = curr.left;
+      }
+      curr = stack[stack.length - 1];
+      // 关键判断：当前节点能否被访问
+      // 1. 没有右子树 或
+      // 2. 右子树刚刚被访问过
+      if (!curr.right || curr.right === lastVisited) {
+        result.push(curr.value);
+        lastVisited = curr;
+        stack.pop();
+        curr = null;
+      } else {
+        curr = curr.right;
+      }
+    }
+    return result;
+  }
 
   // 广度优先遍历（层次遍历）
   breadthFirst() {
@@ -91,16 +128,16 @@ const run = () => {
   tree.insert(8);
   tree.insert(20);
 
-  // console.log("Pre-Order Traversal:");
-  // tree.preOrder(); // 输出顺序：10 6 3 8 15 20
+  console.log("Pre-Order Traversal:");
+  tree.preOrder(); // 输出顺序：10 6 3 8 15 20
 
   console.log("In-Order Traversal:");
-  tree.inOrder(); // 输出顺序：3 6 8 10 15 20
+  console.log(tree.inOrder()); // 输出顺序：3 6 8 10 15 20
 
-  // console.log("Post-Order Traversal:");
-  // tree.postOrder(); // 输出顺序：3 8 6 20 15 10
+  console.log("Post-Order Traversal:");
+  console.log(tree.postOrder()); // 输出顺序：3 8 6 20 15 10
 
-  // console.log("Breadth-First Traversal:");
-  // tree.breadthFirst(); // 输出顺序：10 6 15 3 8 20
+  console.log("Breadth-First Traversal:");
+  tree.breadthFirst(); // 输出顺序：10 6 15 3 8 20
 };
 export default run;
