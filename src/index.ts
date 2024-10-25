@@ -10,7 +10,8 @@ import intersectionOfTwoArraysRun from "./intersection-of-two-arrays";
 import twoSumRun from "./two-sum";
 import repeatingRun from "./longest-substring-without-repeating-characters";
 import minimumWindowSubstringrun from "./minimum-window-substring";
-import treeRun from "./tree";
+// import treeRun from "./tree";
+import treeDepthRun from "./maximum-depth-of-binary-tree";
 
 // 调用预定义的测试函数
 // preorderTraversalTest();
@@ -25,4 +26,5 @@ import treeRun from "./tree";
 // twoSumRun();
 // repeatingRun();
 // minimumWindowSubstringrun();
-treeRun();
+// treeRun();
+treeDepthRun();
