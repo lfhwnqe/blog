@@ -11,17 +11,14 @@ class TreeNode {
 
 function minDepth(node: TreeNode | null): number {
   if (!node) return 0;
-  let depth = 1;
-  const stack = [{ node, depth }];
-  let minDepth = Infinity;
-  while (stack.length) {
-    const { node, depth } = stack.pop();
-    if (!node) return;
-    if (!node.right && !node.left) minDepth = Math.min(minDepth, depth);
-    if (node.right) stack.push({ node: node.right, depth: depth + 1 });
-    if (node.left) stack.push({ node: node.left, depth: depth + 1 });
+  const queue = [{ node, depth: 1 }];
+  while (queue.length) {
+    const { node, depth } = queue.shift();
+    if (!node.right && !node.left) return depth;
+    if (node.left) queue.push({ node: node.left, depth: depth + 1 });
+    if (node.right) queue.push({ node: node.right, depth: depth + 1 });
   }
-  return minDepth;
+  return 1;
 }
 
 const run = () => {
