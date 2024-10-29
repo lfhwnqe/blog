@@ -13,6 +13,7 @@ import minimumWindowSubstringrun from "./minimum-window-substring";
 import treeRun from "./tree";
 import treeDepthRun from "./maximum-depth-of-binary-tree";
 import minimumDepthOfBinaryTreeRun from "./minimum-depth-of-binary-tree";
+import binaryTreeLevelOrderTraversalrun from "./binary-tree-level-order-traversal";
 
 // 调用预定义的测试函数
 // preorderTraversalTest();
@@ -29,4 +30,5 @@ import minimumDepthOfBinaryTreeRun from "./minimum-depth-of-binary-tree";
 // minimumWindowSubstringrun();
 // treeRun();
 // treeDepthRun();
-minimumDepthOfBinaryTreeRun();
+// minimumDepthOfBinaryTreeRun();
+binaryTreeLevelOrderTraversalrun();
