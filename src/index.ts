@@ -16,6 +16,7 @@ import minimumDepthOfBinaryTreeRun from "./minimum-depth-of-binary-tree";
 import binaryTreeLevelOrderTraversalrun from "./binary-tree-level-order-traversal";
 import binaryTreeInorderTraversalRun from './binary-tree-inorder-traversal'
 import pathSumRun from './path-sum'
+import cloneGraphRun from './clone-graph'
 // 调用预定义的测试函数
 // preorderTraversalTest();
 // validParenthesesRun();
@@ -34,4 +35,5 @@ import pathSumRun from './path-sum'
 // minimumDepthOfBinaryTreeRun();
 // binaryTreeLevelOrderTraversalrun();
 // binaryTreeInorderTraversalRun();
-pathSumRun();
+// pathSumRun();
+cloneGraphRun()
