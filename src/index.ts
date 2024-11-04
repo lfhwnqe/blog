@@ -17,6 +17,7 @@ import binaryTreeLevelOrderTraversalrun from "./binary-tree-level-order-traversa
 import binaryTreeInorderTraversalRun from './binary-tree-inorder-traversal'
 import pathSumRun from './path-sum'
 import cloneGraphRun from './clone-graph'
+import findKthLargestRun from './findKthLargest'
 // 调用预定义的测试函数
 // preorderTraversalTest();
 // validParenthesesRun();
@@ -36,4 +37,5 @@ import cloneGraphRun from './clone-graph'
 // binaryTreeLevelOrderTraversalrun();
 // binaryTreeInorderTraversalRun();
 // pathSumRun();
-cloneGraphRun()
+// cloneGraphRun()
+findKthLargestRun()
