@@ -116,3 +116,6 @@ function performUnitOfWork(fiber) {
 
 // fiber的实现，实现时间分片渲染
 // 运行流程 render => requestIdleCallback => workLoop => nextUnitOfWork => performUnitOfWork
+// 初始化render=> requestIdleCallback检测有没有时间执行任务 => workLoop生成fiberTree =>
+// 下一个循环继续生成fiberTree => 直到当前任务节点完整的fiberTree完全生成 =>
+// commit完整的fiberTree(添加到真实dom上);
