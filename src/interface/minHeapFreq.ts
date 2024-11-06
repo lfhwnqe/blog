@@ -100,14 +100,14 @@ export interface FreqItem {
   freq: number;
 }
 
-const heap = new MinHeap<FreqItem>('freq');
+// const heap = new MinHeap<FreqItem>('freq');
 
-heap.insert({ num: 5, freq: 10 });
-heap.insert({ num: 3, freq: 5 });
-heap.insert({ num: 7, freq: 15 });
-heap.insert({ num: 1, freq: 8 });
+// heap.insert({ num: 5, freq: 10 });
+// heap.insert({ num: 3, freq: 5 });
+// heap.insert({ num: 7, freq: 15 });
+// heap.insert({ num: 1, freq: 8 });
 
-console.log(heap.remove()); // { value: 3, freq: 5 }
-console.log(heap.remove()); // { value: 1, freq: 8 }
-console.log(heap.remove()); // { value: 5, freq: 10 }
-console.log(heap.remove()); // { value: 7, freq: 15 }
+// console.log(heap.remove()); // { value: 3, freq: 5 }
+// console.log(heap.remove()); // { value: 1, freq: 8 }
+// console.log(heap.remove()); // { value: 5, freq: 10 }
+// console.log(heap.remove()); // { value: 7, freq: 15 }

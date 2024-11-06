@@ -19,6 +19,7 @@ import pathSumRun from './path-sum'
 import cloneGraphRun from './clone-graph'
 import findKthLargestRun from './findKthLargest'
 import topKFrequentRun from './topKFrequent'
+import mergeKListsRun from './mergeKLists'
 // 调用预定义的测试函数
 // preorderTraversalTest();
 // validParenthesesRun();
@@ -40,4 +41,5 @@ import topKFrequentRun from './topKFrequent'
 // pathSumRun();
 // cloneGraphRun()
 // findKthLargestRun()
-topKFrequentRun()
+// topKFrequentRun()
+mergeKListsRun()
