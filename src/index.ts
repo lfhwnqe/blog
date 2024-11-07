@@ -20,6 +20,7 @@ import cloneGraphRun from './clone-graph'
 import findKthLargestRun from './findKthLargest'
 import topKFrequentRun from './topKFrequent'
 import mergeKListsRun from './mergeKLists'
+import mapRun from './map'
 // 调用预定义的测试函数
 // preorderTraversalTest();
 // validParenthesesRun();
@@ -42,4 +43,5 @@ import mergeKListsRun from './mergeKLists'
 // cloneGraphRun()
 // findKthLargestRun()
 // topKFrequentRun()
-mergeKListsRun()
+// mergeKListsRun()
+mapRun()
