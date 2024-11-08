@@ -21,6 +21,7 @@ import findKthLargestRun from './findKthLargest'
 import topKFrequentRun from './topKFrequent'
 import mergeKListsRun from './mergeKLists'
 import mapRun from './map'
+import bubbleSortRun from './bubbleSort'
 // 调用预定义的测试函数
 // preorderTraversalTest();
 // validParenthesesRun();
@@ -44,4 +45,5 @@ import mapRun from './map'
 // findKthLargestRun()
 // topKFrequentRun()
 // mergeKListsRun()
-mapRun()
+// mapRun()
+bubbleSortRun()
