@@ -22,7 +22,8 @@ import topKFrequentRun from './topKFrequent'
 import mergeKListsRun from './mergeKLists'
 import mapRun from './map'
 import bubbleSortRun from './bubbleSort'
-import selectionSort from './selectionSort'
+import selectionSortRun from './selectionSort'
+import insertionSortRun from './insertionSort'
 // 调用预定义的测试函数
 // preorderTraversalTest();
 // validParenthesesRun();
@@ -48,4 +49,5 @@ import selectionSort from './selectionSort'
 // mergeKListsRun()
 // mapRun()
 // bubbleSortRun()
-selectionSort()
+// selectionSortRun()
+insertionSortRun()
