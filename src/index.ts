@@ -24,6 +24,7 @@ import mapRun from './map'
 import bubbleSortRun from './bubbleSort'
 import selectionSortRun from './selectionSort'
 import insertionSortRun from './insertionSort'
+import mergeSortRun from './mergeSort'
 // 调用预定义的测试函数
 // preorderTraversalTest();
 // validParenthesesRun();
@@ -50,4 +51,5 @@ import insertionSortRun from './insertionSort'
 // mapRun()
 // bubbleSortRun()
 // selectionSortRun()
-insertionSortRun()
+// insertionSortRun()
+mergeSortRun()
