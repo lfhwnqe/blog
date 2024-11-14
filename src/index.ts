@@ -25,6 +25,7 @@ import bubbleSortRun from './bubbleSort'
 import selectionSortRun from './selectionSort'
 import insertionSortRun from './insertionSort'
 import mergeSortRun from './mergeSort'
+import quickSortRun from './quickSort'
 // 调用预定义的测试函数
 // preorderTraversalTest();
 // validParenthesesRun();
@@ -52,4 +53,5 @@ import mergeSortRun from './mergeSort'
 // bubbleSortRun()
 // selectionSortRun()
 // insertionSortRun()
-mergeSortRun()
+// mergeSortRun()
+quickSortRun()
