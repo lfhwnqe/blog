@@ -26,6 +26,8 @@ import selectionSortRun from './selectionSort'
 import insertionSortRun from './insertionSort'
 import mergeSortRun from './mergeSort'
 import quickSortRun from './quickSort'
+import sequentialSearchRun from './sequentialSearch'
+import binarySearchRun from './binarySearch'
 // 调用预定义的测试函数
 // preorderTraversalTest();
 // validParenthesesRun();
@@ -54,4 +56,6 @@ import quickSortRun from './quickSort'
 // selectionSortRun()
 // insertionSortRun()
 // mergeSortRun()
-quickSortRun()
+// quickSortRun()
+// sequentialSearchRun()
+binarySearchRun()
