@@ -14,20 +14,21 @@ import treeRun from "./tree";
 import treeDepthRun from "./maximum-depth-of-binary-tree";
 import minimumDepthOfBinaryTreeRun from "./minimum-depth-of-binary-tree";
 import binaryTreeLevelOrderTraversalrun from "./binary-tree-level-order-traversal";
-import binaryTreeInorderTraversalRun from './binary-tree-inorder-traversal'
-import pathSumRun from './path-sum'
-import cloneGraphRun from './clone-graph'
-import findKthLargestRun from './findKthLargest'
-import topKFrequentRun from './topKFrequent'
-import mergeKListsRun from './mergeKLists'
-import mapRun from './map'
-import bubbleSortRun from './bubbleSort'
-import selectionSortRun from './selectionSort'
-import insertionSortRun from './insertionSort'
-import mergeSortRun from './mergeSort'
-import quickSortRun from './quickSort'
-import sequentialSearchRun from './sequentialSearch'
-import binarySearchRun from './binarySearch'
+import binaryTreeInorderTraversalRun from "./binary-tree-inorder-traversal";
+import pathSumRun from "./path-sum";
+import cloneGraphRun from "./clone-graph";
+import findKthLargestRun from "./findKthLargest";
+import topKFrequentRun from "./topKFrequent";
+import mergeKListsRun from "./mergeKLists";
+import mapRun from "./map";
+import bubbleSortRun from "./bubbleSort";
+import selectionSortRun from "./selectionSort";
+import insertionSortRun from "./insertionSort";
+import mergeSortRun from "./mergeSort";
+import quickSortRun from "./quickSort";
+import sequentialSearchRun from "./sequentialSearch";
+import binarySearchRun from "./binarySearch";
+import mergeTwoListsRun from "./mergeTwoLists";
 // 调用预定义的测试函数
 // preorderTraversalTest();
 // validParenthesesRun();
@@ -58,4 +59,5 @@ import binarySearchRun from './binarySearch'
 // mergeSortRun()
 // quickSortRun()
 // sequentialSearchRun()
-binarySearchRun()
+// binarySearchRun()
+mergeTwoListsRun();
