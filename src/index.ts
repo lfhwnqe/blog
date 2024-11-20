@@ -29,6 +29,7 @@ import quickSortRun from "./quickSort";
 import sequentialSearchRun from "./sequentialSearch";
 import binarySearchRun from "./binarySearch";
 import mergeTwoListsRun from "./mergeTwoLists";
+import guessNumberRun from "./guessNumber";
 // 调用预定义的测试函数
 // preorderTraversalTest();
 // validParenthesesRun();
@@ -60,4 +61,5 @@ import mergeTwoListsRun from "./mergeTwoLists";
 // quickSortRun()
 // sequentialSearchRun()
 // binarySearchRun()
-mergeTwoListsRun();
+// mergeTwoListsRun();
+guessNumberRun();
