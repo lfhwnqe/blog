@@ -31,6 +31,7 @@ import binarySearchRun from "./binarySearch";
 import mergeTwoListsRun from "./mergeTwoLists";
 import guessNumberRun from "./guessNumber";
 import invertTreeRun from "./invertTree";
+import isSameTreeRun from "./isSameTree";
 // 调用预定义的测试函数
 // preorderTraversalTest();
 // validParenthesesRun();
@@ -64,4 +65,5 @@ import invertTreeRun from "./invertTree";
 // binarySearchRun()
 // mergeTwoListsRun();
 // guessNumberRun();
-invertTreeRun();
+// invertTreeRun();
+isSameTreeRun();
