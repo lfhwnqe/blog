@@ -32,6 +32,7 @@ import mergeTwoListsRun from "./mergeTwoLists";
 import guessNumberRun from "./guessNumber";
 import invertTreeRun from "./invertTree";
 import isSameTreeRun from "./isSameTree";
+import isSymmetricRun from "./isSymmetric";
 // 调用预定义的测试函数
 // preorderTraversalTest();
 // validParenthesesRun();
@@ -66,4 +67,5 @@ import isSameTreeRun from "./isSameTree";
 // mergeTwoListsRun();
 // guessNumberRun();
 // invertTreeRun();
-isSameTreeRun();
+// isSameTreeRun();
+isSymmetricRun();
