@@ -33,6 +33,7 @@ import guessNumberRun from "./guessNumber";
 import invertTreeRun from "./invertTree";
 import isSameTreeRun from "./isSameTree";
 import isSymmetricRun from "./isSymmetric";
+import climbStairsRun from "./climbStairs";
 // 调用预定义的测试函数
 // preorderTraversalTest();
 // validParenthesesRun();
@@ -68,4 +69,5 @@ import isSymmetricRun from "./isSymmetric";
 // guessNumberRun();
 // invertTreeRun();
 // isSameTreeRun();
-isSymmetricRun();
+// isSymmetricRun();
+climbStairsRun();
