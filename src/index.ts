@@ -35,6 +35,7 @@ import isSameTreeRun from "./isSameTree";
 import isSymmetricRun from "./isSymmetric";
 import climbStairsRun from "./climbStairs";
 import robRun from "./rob";
+import findContentChildrenRun from "./findContentChildren";
 // 调用预定义的测试函数
 // preorderTraversalTest();
 // validParenthesesRun();
@@ -72,4 +73,5 @@ import robRun from "./rob";
 // isSameTreeRun();
 // isSymmetricRun();
 // climbStairsRun();
-robRun();
+// robRun();
+findContentChildrenRun();
