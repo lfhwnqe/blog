@@ -36,6 +36,7 @@ import isSymmetricRun from "./isSymmetric";
 import climbStairsRun from "./climbStairs";
 import robRun from "./rob";
 import findContentChildrenRun from "./findContentChildren";
+import maxProfitRun from "./maxProfit";
 // 调用预定义的测试函数
 // preorderTraversalTest();
 // validParenthesesRun();
@@ -74,4 +75,5 @@ import findContentChildrenRun from "./findContentChildren";
 // isSymmetricRun();
 // climbStairsRun();
 // robRun();
-findContentChildrenRun();
+// findContentChildrenRun();
+maxProfitRun();
