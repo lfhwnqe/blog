@@ -37,6 +37,7 @@ import climbStairsRun from "./climbStairs";
 import robRun from "./rob";
 import findContentChildrenRun from "./findContentChildren";
 import maxProfitRun from "./maxProfit";
+import permuteRun from './permute'
 // 调用预定义的测试函数
 // preorderTraversalTest();
 // validParenthesesRun();
@@ -76,4 +77,5 @@ import maxProfitRun from "./maxProfit";
 // climbStairsRun();
 // robRun();
 // findContentChildrenRun();
-maxProfitRun();
+// maxProfitRun();
+permuteRun();
