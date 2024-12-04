@@ -38,6 +38,7 @@ import robRun from "./rob";
 import findContentChildrenRun from "./findContentChildren";
 import maxProfitRun from "./maxProfit";
 import permuteRun from './permute'
+import subsetsRun from './subsets'
 // 调用预定义的测试函数
 // preorderTraversalTest();
 // validParenthesesRun();
@@ -78,4 +79,5 @@ import permuteRun from './permute'
 // robRun();
 // findContentChildrenRun();
 // maxProfitRun();
-permuteRun();
+// permuteRun();
+subsetsRun()
