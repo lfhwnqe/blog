@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="module">
+      import { createStore } from "./createStore.js";
+      const reducer = (state, action) => {
+        if (action.type === "INCREMENT") {
+          return { count: state.count + 1 };
+        }
+        return state;
+      };
+      const initialState = { count: 0 };
+      const store = createStore(reducer, initialState);
+      store.subscribe(() => {
+        console.log("🌹：", store.getState().count);
+      });
+      store.dispatch({ type: "INCREMENT" });
+      store.dispatch({ type: "INCREMENT" });
+    </script>
+  </body>
+</html>
