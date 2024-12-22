@@ -11,15 +11,13 @@
       import { combineReducers } from "./combineReducers.js";
       import counterReducer from "./store/counter.js";
       import infoReducer from "./store/info.js";
-      const initialState = {
-        counter: { count: 0 },
-        info: { name: "张三", age: 18 },
-      };
       const reducer = combineReducers({
         counter: counterReducer,
         info: infoReducer,
       });
-      const store = createStore(reducer, initialState);
+      const store = createStore(reducer);
+      const state = store.getState();
+      console.log("🌹：", state);
       store.subscribe(() => {
         const state = store.getState();
         console.log("🌹：", state.counter.count, state.info.name);
