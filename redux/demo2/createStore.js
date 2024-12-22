@@ -12,6 +12,6 @@ export function createStore(reducer, initialState) {
   const subscribe = (listener) => {
     listeners.push(listener);
   };
-
+  dispatch({ type: Symbol() });
   return { getState, dispatch, subscribe };
 }
