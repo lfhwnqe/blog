@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="module">
+      import { createStore } from "./createStore.js";
+      import { combineReducers } from "./combineReducers.js";
+      import counterReducer from "./store/counter.js";
+      import infoReducer from "./store/info.js";
+      const initialState = {
+        counter: { count: 0 },
+        info: { name: "张三", age: 18 },
+      };
+      const reducer = combineReducers({
+        counter: counterReducer,
+        info: infoReducer,
+      });
+      const store = createStore(reducer, initialState);
+      store.subscribe(() => {
+        const state = store.getState();
+        console.log("🌹：", state.counter.count, state.info.name);
+      });
+      store.dispatch({ type: "INCREMENT" });
+      store.dispatch({ type: "INCREMENT" });
+      store.dispatch({ type: "UPDATE_NAME", payload: "李四" });
+    </script>
+  </body>
+</html>
